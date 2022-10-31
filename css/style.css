@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --primary:#f27a1a;
+    --secondary:#9a0c1a;
+    --dark:#13160d;
+    --info:#547fff;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+head{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    background-color: var(--primary);
+}
+
+.logo{
+    display: flex;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: white;
+}
+
+.header-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.arama{
+    height: 3rem;
+    width: 25%;
+    justify-content: end;
+}
+
+.arama input{
+    width: 15rem;
+    font-size: 1.5rem!important;
+}
+
+.btn-ara{
+    background-color:white!important;
+    width: 7rem;
+    font-size: 1.5rem!important;
+}
+
+.kategori-links{
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.kategori-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding-bottom: 1px;
+    
+}
+
+.kategori-links li a:hover{
+    border-bottom: .3rem solid white;
+}
+
+.kategori-links li ul{
+    position: absolute;
+    margin-top: 27px;
+    left: 5px;
+    width: 180px;
+    background-color: var(--primary);
+    text-align: center;
+    display: none;
+}
+
+.erkek{
+    left: 60px!important;
+}
+
+.cocuk{
+    left: 110px!important;
+}
+.kategori-links li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    list-style: none;
+}
+
+.kategori-links li:hover > ul{
+    display: initial;
+}
+
+.banner-listing-items{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.banner-listing-items a{
+    background-color: var(--primary);
+    text-decoration: none;
+    color: #fff;
+    margin-top: 1.5rem;
+    font-size: 18px;
+    width: 30%;
+    padding: 1.2rem;
+    border-radius: 20px;
+}
+.banner-listing-items a:hover{
+    color: #fff;
+}
+.cards-row{
+    margin-top: 2rem;
+    display:flex;
+    justify-content: space-between;
+}
+.cards-row .card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+    width: 32%;
+    height: 250px;
+    transition: .5s ease;
+    border-radius:5px;
+}
+.cards-row .card:hover{
+    background-color: var(--primary);
+}
+.cards-row .card .card-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+.cards-row .card .card-text .alısveris-basla,
+.cards-row .card .card-text p
+{
+    text-decoration: none;
+    color: white;
+    margin: .5rem;
+    font-size: 1.6rem;
+}
+.cards-row .card .card-text .alısveris-basla{
+    color: #fff;
+    transition: .5s ease;
+}
+
+.cards-row .card .card-text .alısveris-basla:hover{
+    color: var(--dark);
+}
+
+.one-cikan{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid var(--dark);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.one-cikan .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.one-cikan .head h3{
+    margin-left: .5rem;
+    padding: .3rem;
+    font-size: 2rem;
+    color: var(--primary);
+}
+.one-cikan .head a{
+    margin-right: .5rem;
+    padding: .3rem;
+    font-size: 1.6rem;
+    color: black;
+    transition: .3s ease;
+}
+.one-cikan .head a:hover{
+    color: var(--primary);
+}
+.one-cikan .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.one-cikan .content .card{
+    justify-content: space-between;
+    width: 19%;
+    height: 300px;
+    border: 1px solid var(--dark);
+    text-decoration: none;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    padding: 0;
+    transition: .3s ease;
+}
+.one-cikan .content .card:hover{
+    transform: scale(1.01);
+}
+.one-cikan .content .card img{
+    height: 70%;
+    object-fit: contain;
+}
+.one-cikan .content .card-footer{
+    background-color: var(--primary);
+    height: 30%;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.one-cikan .content .card-footer p{
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+.one-cikan .content .card-footer .fiyat{
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.one-cikan .content .card-footer .fiyat del{
+    color: #e2e2e2;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
